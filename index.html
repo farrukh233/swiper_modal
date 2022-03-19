@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">
+      <h1 class="menu__title">Значение счетчика на активном слайде:</h1>
+      <div class="menu__count">2</div>
+      <button class="menu__button">Открыть</button>
+    </div>
+    <div class="modal">
+      <div class="swiper-container">
+        <div class="item__wrapper swiper-wrapper">
+          <div class="item__slide swiper-slide">
+            <div class="item__img">
+              <img width="900" height="450" src="img/1.jpg" />
+            </div>
+          </div>
+          <div class="item__slide swiper-slide">
+            <div class="item__img">
+              <img width="900" height="450" src="img/2.jpg" />
+            </div>
+          </div>
+          <div class="item__slide swiper-slide">
+            <div class="item__img">
+              <img width="900" height="450" src="img/3.jpg" />
+            </div>
+          </div>
+          <div class="item__slide swiper-slide">
+            <div class="item__img">
+              <img width="900" height="450" src="img/4.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <button class="swiper-close">Закрыть</button>
+        <div id="counter">
+          <input class="btn" type="button" id="buttonCountPlus" value="+" />
+          <div id="buttonCountNumber">1</div>
+          <input class="btn" type="button" id="buttonCountMinus" value="-" />
+        </div>
+      </div>
+    </div>
+    <script src="swiper.js"></script>
+    <script src="count.js"></script>
+  </body>
+</html>
