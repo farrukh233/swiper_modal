@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>PUG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Red+Hat+Display:wght@300;400;500&amp;family=Roboto:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
   </head>
   <body>
     <div class="menu">
-      <h1 class="menu__title">Значение счетчика на активном слайде:</h1>
-      <div class="menu__count">2</div>
-      <button class="menu__button">Открыть</button>
+      <h1 class="menu__title">Значение счетчика на активном слайде</h1>
+      <div class="menu__count" id="menu_conter">0</div>
+      <button class="menu__button" id="menu_open_modal">Открыть</button>
     </div>
-    <div class="modal">
+    <div class="modal" id="modal">
       <div class="swiper-container">
         <div class="item__wrapper swiper-wrapper">
           <div class="item__slide swiper-slide">
             <div class="item__img">
-              <img width="900" height="450" src="img/1.jpg" />
+              <img src="img/1.jpg" width="900" height="450" />
             </div>
           </div>
           <div class="item__slide swiper-slide">
             <div class="item__img">
-              <img width="900" height="450" src="img/2.jpg" />
+              <img src="img/2.jpg" width="900" height="450" />
             </div>
           </div>
           <div class="item__slide swiper-slide">
             <div class="item__img">
-              <img width="900" height="450" src="img/3.jpg" />
+              <img src="img/3.jpg" width="900" height="450" />
             </div>
           </div>
           <div class="item__slide swiper-slide">
             <div class="item__img">
-              <img width="900" height="450" src="img/4.jpg" />
+              <img src="img/4.jpg" width="900" height="450" />
             </div>
           </div>
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        <button class="swiper-close">Закрыть</button>
+        <button class="swiper-close" id="swiper_close">Закрыть</button>
         <div id="counter">
-          <input class="btn" type="button" id="buttonCountPlus" value="+" />
-          <div id="buttonCountNumber">1</div>
-          <input class="btn" type="button" id="buttonCountMinus" value="-" />
+          <input class="btn" id="buttonCountPlus" type="button" value="+" />
+          <div id="buttonCountNumber">0</div>
+          <input class="btn" id="buttonCountMinus" type="button" value="-" />
         </div>
       </div>
     </div>
-    <script src="swiper.js"></script>
-    <script src="count.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
